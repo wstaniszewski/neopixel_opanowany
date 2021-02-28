@@ -1,0 +1,15 @@
+strip = neopixel.create(DigitalPin.P2, 24, NeoPixelMode.RGB)
+strip.set_brightness(10)
+range2 = strip.range(0, 6)
+range2.show_rainbow(1, 320)
+range22 = strip.range(8, 6)
+range22.show_rainbow(1, 320)
+range3 = strip.range(16, 6)
+range3.show_rainbow(1, 320)
+serial.write_line("Connected")
+
+def on_forever():
+    strip.rotate(1)
+    basic.pause(100)
+    strip.show()
+basic.forever(on_forever)
