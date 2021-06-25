@@ -8,7 +8,7 @@ let range3 = strip.range(16, 6)
 range3.showRainbow(1, 320)
 serial.writeLine("Connected")
 basic.forever(function () {
-    strip.rotate(1)
+    strip.rotate(2)
     basic.pause(100)
     strip.show()
 })
