@@ -6,7 +6,7 @@ let range2 = strip.range(8, 6)
 range2.showRainbow(1, 320)
 let range3 = strip.range(16, 6)
 range3.showRainbow(1, 320)
-serial.writeLine("Connected")
+serial.writeLine("Connected!")
 basic.forever(function () {
     strip.rotate(1)
     basic.pause(100)
